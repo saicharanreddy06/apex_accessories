@@ -1,0 +1,197 @@
+
+/* --- PURE CSS SCROLL ANIMATIONS (CREATIVE SPRING REVEALS) --- */
+
+@supports (animation-timeline: view()) {
+  [data-aos] {
+    opacity: 0;
+    animation-timeline: view();
+    /* Tighten the range so the spring effect happens briskly as it enters */
+    animation-range: entry 5% cover 40%;
+    animation-fill-mode: both;
+    animation-timing-function: linear; /* The keyframes will handle the "spring" physics */
+  }
+  
+  /* 3D Spring Fade Up */
+  [data-aos="fade-up"] { animation-name: creativeSpringUp; }
+  @keyframes creativeSpringUp {
+    0% { 
+        opacity: 0; 
+        transform: perspective(1200px) translateY(150px) rotateX(30deg) scale(0.8); 
+        filter: blur(15px); 
+    }
+    65% {
+        opacity: 0.9;
+        transform: perspective(1200px) translateY(-15px) rotateX(-10deg) scale(1.03);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: perspective(1200px) translateY(0) rotateX(0) scale(1); 
+        filter: blur(0); 
+    }
+  }
+  
+  /* 3D Spring Fade Down */
+  [data-aos="fade-down"] { animation-name: creativeSpringDown; }
+  @keyframes creativeSpringDown {
+    0% { 
+        opacity: 0; 
+        transform: perspective(1200px) translateY(-150px) rotateX(-30deg) scale(0.8); 
+        filter: blur(15px); 
+    }
+    65% {
+        opacity: 0.9;
+        transform: perspective(1200px) translateY(15px) rotateX(10deg) scale(1.03);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: perspective(1200px) translateY(0) rotateX(0) scale(1); 
+        filter: blur(0); 
+    }
+  }
+  
+  /* Whip from Left */
+  [data-aos="fade-right"] { animation-name: creativeWhipRight; }
+  @keyframes creativeWhipRight {
+    0% { 
+        opacity: 0; 
+        transform: perspective(1000px) rotateY(-35deg) translateZ(-50px) skewX(-10deg) scale(0.9); 
+        transform-origin: left center;
+        filter: blur(15px); 
+    }
+    65% {
+        opacity: 0.9;
+        transform: perspective(1000px) rotateY(10deg) translateZ(10px) skewX(5deg) scale(1.02);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: perspective(1000px) rotateY(0) translateZ(0) skewX(0) scale(1); 
+        filter: blur(0); 
+    }
+}
+  
+  /* Whip from Right */
+  [data-aos="fade-left"] { animation-name: creativeWhipLeft; }
+  @keyframes creativeWhipLeft {
+    0% { 
+        opacity: 0; 
+        transform: perspective(1000px) rotateY(35deg) translateZ(-50px) skewX(10deg) scale(0.9); 
+        transform-origin: right center;
+        filter: blur(15px); 
+    }
+    65% {
+        opacity: 0.9;
+        transform: perspective(1000px) rotateY(-10deg) translateZ(10px) skewX(-5deg) scale(1.02);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: perspective(1000px) rotateY(0) translateZ(0) skewX(0) scale(1); 
+        filter: blur(0); 
+    }
+}
+  
+  /* Pop & Settle (Zoom In) */
+  [data-aos="zoom-in"] { animation-name: creativePop; }
+  @keyframes creativePop {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.4) translateY(60px); 
+        filter: blur(20px); 
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(-10px);
+        filter: blur(0);
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+        filter: blur(0); 
+    }
+  }
+
+  /* Diagonal Whip */
+  [data-aos="fade-up-right"] { animation-name: creativeDiagWhip; }
+  @keyframes creativeDiagWhip {
+    0% { 
+        opacity: 0; 
+        transform: translate(-100px, 100px) rotateZ(-15deg) scale(0.8); 
+        filter: blur(15px); 
+    }
+    65% {
+        opacity: 0.9;
+        transform: translate(15px, -15px) rotateZ(5deg) scale(1.05);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translate(0, 0) rotateZ(0) scale(1); 
+        filter: blur(0); 
+    }
+  }
+  
+  /* Dramatic Flip */
+  [data-aos="flip-left"] { animation-name: creativeFlip; }
+  @keyframes creativeFlip {
+    0% { 
+        opacity: 0; 
+        transform: perspective(1000px) rotateY(-120deg) translateZ(-200px); 
+        filter: blur(15px);
+    }
+    60% {
+        opacity: 0.9;
+        transform: perspective(1000px) rotateY(20deg) translateZ(50px);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: perspective(1000px) rotateY(0) translateZ(0); 
+        filter: blur(0);
+    }
+  }
+  
+  /* Stretch and Snap */
+  [data-aos="zoom-y"] { animation-name: creativeStretch; }
+  @keyframes creativeStretch {
+    0% { 
+        opacity: 0; 
+        transform: scaleY(0) scaleX(1.2); 
+        filter: blur(15px);
+    }
+    65% {
+        opacity: 0.9;
+        transform: scaleY(1.1) scaleX(0.95);
+        filter: blur(2px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: scaleY(1) scaleX(1); 
+        filter: blur(0);
+    }
+  }
+}
+
+/* Fallback for Safari/Firefox (Using the same creative frames over time!) */
+@supports not (animation-timeline: view()) {
+  [data-aos] {
+    opacity: 0;
+    /* Use the SpringUp by default for standard loads */
+    animation: creativeSpringUp 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  
+  [data-aos-delay="100"] { animation-delay: 0.1s; }
+  [data-aos-delay="200"] { animation-delay: 0.2s; }
+  [data-aos-delay="300"] { animation-delay: 0.3s; }
+  [data-aos-delay="400"] { animation-delay: 0.4s; }
+  
+  [data-aos="fade-down"] { animation-name: creativeSpringDown; }
+  [data-aos="fade-right"] { animation-name: creativeWhipRight; }
+  [data-aos="fade-left"] { animation-name: creativeWhipLeft; }
+  [data-aos="zoom-in"] { animation-name: creativePop; }
+  [data-aos="fade-up-right"] { animation-name: creativeDiagWhip; }
+  [data-aos="flip-left"] { animation-name: creativeFlip; }
+  [data-aos="zoom-y"] { animation-name: creativeStretch; }
+}
