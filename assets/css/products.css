@@ -1,8 +1,5 @@
 @import url("global.css");
 
-/* =========================================
-   PRODUCTS HERO
-   ========================================= */
 .products-hero {
   position: relative;
   height: 100vh;
@@ -142,9 +139,7 @@
 .refactored-inline-52 { background: url('../assets/images/featured_basketball.jpg') center/cover; height: 300px; border-radius: 10px; display: flex; align-items: flex-end; padding: 20px; }
 .refactored-inline-53 { background: url('../assets/images/hero_daylight.jpg') center/cover; height: 300px; border-radius: 10px; display: flex; align-items: flex-end; padding: 20px; }
 
-/* =========================================
-   PRODUCTS GRID & CARDS (Project-33 Light Mode Style)
-   ========================================= */
+/*  PRODUCTS GRID & CARDS (Project-33 Light Mode Style) */
 
 .product-grid {
   display: grid;
@@ -292,12 +287,12 @@
 }
 
 
-/* PAGE HEADER STYLES (Copied from about.css) */
+/* PAGE HEADER STYLES */
 .page-header::before {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.35); /* High-opacity white tint */
+  background: rgba(255, 255, 255, 0.35);
   z-index: 1;
 }
 .page-header .container {
@@ -319,7 +314,7 @@
 .page-header p {
   font-size: 24px;
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* Added shadow for readability */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
   font-weight: 500;
   max-width: 800px;
   margin: 0 auto 30px auto;
@@ -337,7 +332,7 @@
   background-image: url('../images/about_hero.jpg');
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; removed for performance */
+  /* background-attachment*/
   color: var(--color-text);
   text-align: center;
   position: relative;
@@ -416,7 +411,7 @@
   box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3);
 }
 
-/* Filtering Logic (Pure CSS) */
+/* Filtering Logic */
 #sport-basketball:checked ~ .pure-css-filtered .product-card:not(.cat-basketball),
 #sport-soccer:checked ~ .pure-css-filtered .product-card:not(.cat-soccer),
 #sport-esports:checked ~ .pure-css-filtered .product-card:not(.cat-esports),

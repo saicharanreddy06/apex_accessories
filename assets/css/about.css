@@ -1,15 +1,13 @@
 @import url("global.css");
 
-/* =========================================
-   ABOUT CSS
-   ========================================= */
+/* ABOUT CSS */
 
 
 .page-header::before {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(255, 255, 255, 0.35); /* High-opacity white tint */
+  background: rgba(255, 255, 255, 0.35);
   z-index: 1;
 }
 .page-header .container {
@@ -31,7 +29,7 @@
 .page-header p {
   font-size: 24px;
   color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* Added shadow for readability */
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6); 
   font-weight: 500;
   max-width: 800px;
   margin: 0 auto 30px auto;
@@ -220,10 +218,6 @@
 }
 
 /* Partners Section */
-
-
-
-
 /* Careers CTA */
 .careers-cta {
   background: var(--color-primary);
@@ -252,7 +246,7 @@
     gap: var(--spacing-sm);
   }
 }
-/* ANIMATIONS ADDED TO REAL WEBSITE (ABOUT PAGE) */
+/* ANIMATIONS ABOUT PAGE */
 .value-card {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -295,9 +289,6 @@
 }
 
 /* Timeline scroll animation */
-
-
-/* Fallback spacing between items */
 .timeline-item {
   margin-bottom: 40px;
 }
@@ -319,7 +310,7 @@
 }
 
 
-/* MIGRATED INLINE STYLES FOR ABOUT */
+
 .refactored-inline-1 { font-size: 24px; max-width: 800px; margin: 0 auto 20px; font-weight: 500; }
 .refactored-inline-2 { font-size: 18px; max-width: 700px; margin: 0 auto 40px; color: rgba(255,255,255,0.85); line-height: 1.6; }
 .refactored-inline-3 { display: flex; gap: 20px; justify-content: center; }
@@ -329,57 +320,6 @@
 .refactored-inline-7 { color:white; }
 .refactored-inline-8 { margin: 20px auto 40px; color:white; }
 .team-card:hover .team-avatar i { color: white !important; }
-
-/* Premium Floating 3D Geometry */
-.floating-bg-elements {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Glass Sphere */
-.geom-sphere {
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0.2) 50%, rgba(0,0,0,0.03) 100%);
-  box-shadow: inset -10px -10px 20px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.7);
-  animation: float-geom 12s infinite ease-in-out alternate;
-}
-
-/* Tumbling Glass Cube/Panel */
-.geom-cube {
-  position: absolute;
-  background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.1) 100%);
-  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8), inset -5px -5px 15px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.08);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.7);
-  border-radius: 15px;
-  animation: float-tumble 20s infinite linear;
-}
-
-/* Specific Instances */
-.geo-1 { width: 140px; height: 140px; top: 10%; left: 5%; animation-duration: 14s; } /* Sphere */
-.geo-2 { width: 90px; height: 90px; bottom: 15%; right: 10%; animation-duration: 22s; animation-direction: reverse; } /* Cube */
-.geo-3 { width: 180px; height: 180px; top: 50%; right: -5%; animation-duration: 28s; } /* Cube */
-.geo-4 { width: 70px; height: 70px; top: 60%; left: 15%; animation-duration: 16s; } /* Sphere */
-
-@keyframes float-geom {
-  0% { transform: translateY(0) scale(1); }
-  100% { transform: translateY(-60px) scale(1.05); }
-}
-
-@keyframes float-tumble {
-  0% { transform: perspective(1000px) translateY(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  50% { transform: perspective(1000px) translateY(-80px) rotateX(180deg) rotateY(180deg) rotateZ(90deg); }
-  100% { transform: perspective(1000px) translateY(0) rotateX(360deg) rotateY(360deg) rotateZ(180deg); }
-}
-
 
 /* Eco Section Lists */
 .eco-list {
@@ -396,8 +336,6 @@
   margin-right: 10px;
 }
 
-
-/* Utility classes replacing inline styles for strict compliance */
 .geo-container { position: relative; }
 .z-index-1 { position: relative; z-index: 1; }
 .geo-large-right { left: 80%; top: 60%; width: 200px; height: 200px; }
@@ -505,7 +443,7 @@
 @keyframes drift-stars { from { background-position: 0 0; } to { background-position: 1000px 1000px; } }
 
 
-/* Fix for dark icons over parallax - Make them white statically, orange on hover */
+/*dark icons over parallax */
 .bg-future .tech-feature i, 
 .bg-future .tech-feature i.neon-icon {
   color: white !important;
@@ -523,15 +461,14 @@
 /* Classic Scrolling Timeline */
 .timeline-section {
   position: relative;
-  /* overflow: hidden; removed to fix animation-timeline: view() bug */
   padding: 100px 0;
 }
 
 .timeline-container {
   position: relative;
-  max-width: 1200px; /* Controls max width of the timeline layout */
+  max-width: 1200px; 
   margin: 0 auto;
-  padding-left: 60px; /* Space for the vertical line */
+  padding-left: 60px; 
 }
 
 .classic-timeline-line {
@@ -553,7 +490,6 @@
   transform-origin: top;
   transform: scaleY(0);
   box-shadow: 0 0 15px rgba(255, 51, 0, 0.5);
-  /* The scaleY will be directly injected via JS on scroll */
 }
 
 .timeline-content {
@@ -598,7 +534,7 @@
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -51px; /* precisely centered over the line */
+  left: -51px;
   top: 30px;
   width: 18px;
   height: 18px;
@@ -628,7 +564,7 @@
 }
 
 .bg-alt .timeline-item h3 {
-  color: var(--color-secondary); /* Restoring dark text readability */
+  color: var(--color-secondary);
 }
 
 .timeline-item p {
@@ -650,9 +586,7 @@
   .timeline-item { flex-direction: column; gap: 10px; align-items: flex-start; }
 }
 
-/* =========================================
-   CARDLESS MINIMAL VALUES SECTION
-   ========================================= */
+/* CARDLESS MINIMAL VALUES SECTION */
 .values-minimal-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -673,7 +607,7 @@
 }
 
 .bg-alt .value-minimal {
-  border-left-color: rgba(0, 0, 0, 0.08); /* Darker border for light bg */
+  border-left-color: rgba(0, 0, 0, 0.08); 
 }
 
 .value-minimal:hover {
@@ -723,36 +657,10 @@
   .value-minimal:hover { transform: translateX(5px); }
 }
 
-/* =========================================
-   PROPER LAB CTA SECTION
-   ========================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  
-  
-  
+@media (max-width: 768px) {  
 }
 
-/* =========================================
-   CARDLESS HANDLING INDEX LIST
-   ========================================= */
+/* CARDLESS HANDLING INDEX LIST */
 .handling-index-list {
   display: flex;
   flex-direction: column;
@@ -921,13 +829,12 @@
   background-image: url('../images/production_facility.jpg');
   background-size: cover;
   background-position: center;
-  /* background-attachment: fixed; removed for performance */
   color: var(--color-text);
   text-align: center;
   position: relative;
 }
 
-/* --- DARK BACKGROUND TEXT OVERRIDES --- */
+/* --- DARK BACKGROUND TEXT  --- */
 .bg-eco .section-title,
 .bg-future .section-title {
   color: #ffffff !important;
@@ -939,9 +846,7 @@
 }
 
 
-/* =========================================
-   ABOUT HERO
-   ========================================= */
+/* ABOUT HERO */
 .about-hero {
   position: relative;
   height: 100vh;
@@ -1079,8 +984,7 @@
 
 
 
-/* --- PURE CSS SCROLL-DRIVEN ANIMATIONS --- */
-/* (Supported in modern Chrome/Edge) */
+/* --- CSS SCROLL-DRIVEN ANIMATIONS --- */
 @supports (animation-timeline: view()) {
   .timeline-item {
     opacity: 0;
@@ -1119,7 +1023,6 @@
   }
 }
 
-/* --- FALLBACK LOAD ANIMATION (For Safari/Older Browsers) --- */
 @supports not (animation-timeline: view()) {
   .timeline-item {
     opacity: 0;

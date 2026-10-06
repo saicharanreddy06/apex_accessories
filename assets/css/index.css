@@ -1,17 +1,13 @@
 @import url("global.css");
 
-/* =========================================
-   INDEX CSS - Premium V2.0
-   ========================================= */
+/* INDEX CSS - Premium V2.0 */
 
 .section { padding: var(--spacing-lg) 0; position: relative; }
 .bg-alt { background-color: var(--color-tertiary); }
 .section-header { margin-bottom: var(--spacing-xl); }
 
 
-/* =========================================
-   HERO SECTION (Light Mode with Orbs)
-   ========================================= */
+/* HERO SECTION */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -157,9 +153,7 @@
   flex-wrap: wrap;
 }
 
-/* =========================================
-   SECTION 1: FEATURED DESIGNS (3D Cards)
-   ========================================= */
+/* SECTION 1: FEATURED DESIGNS (3D Cards) */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
@@ -170,7 +164,6 @@
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  /* 3D setup */
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -220,9 +213,7 @@
   margin-bottom: var(--spacing-md);
 }
 
-/* =========================================
-   SECTION 2: SHOP BY SPORT (Neon Glow)
-   ========================================= */
+/* SECTION 2: SHOP BY SPORT (Neon Glow) */
 
 /* --- GRID LAYOUT (GEAR UP BY SPORT) --- */
 .sport-text-cloud {
@@ -249,7 +240,7 @@
 }
 
 .sport-name {
-  color: var(--color-text-muted); /* Integrating with existing theme */
+  color: var(--color-text-muted);
   font-family: var(--font-heading, system-ui);
   font-size: clamp(2.5rem, 6vw, 4.5rem); 
   font-weight: 800;
@@ -382,9 +373,7 @@
   .flow-img, .flow-line { display: none !important; }
 }
 
-/* =========================================
-   SECTION 3: CUSTOM PROCESS
-   ========================================= */
+/*  SECTION 3: CUSTOM PROCESS */
 .process-steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
@@ -449,9 +438,7 @@
   box-shadow: 0 0 40px rgba(255, 51, 0, 0.6);
 }
 
-/* =========================================
-   SECTION 4: BULK PROMO (Marquee + Glass)
-   ========================================= */
+/*   SECTION 4: BULK PROMO (Marquee + Glass) */
 .bulk-promo {
   background: url('../images/hero_jerseys.jpg') center/cover fixed;
   position: relative;
@@ -481,9 +468,7 @@
   text-align: center;
 }
 
-/* =========================================
-   SECTION 5: TRUSTED BY (Interactive Grid)
-   ========================================= */
+/*   SECTION 5: TRUSTED BY (Interactive Grid) */
 .trusted-by {
   padding-bottom: var(--spacing-xxl);
 }
@@ -513,7 +498,7 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  z-index: 2; /* Ensures cards stay above the ambient glow */
+  z-index: 2;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
@@ -568,14 +553,6 @@
   border-color: #FF5500;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 900px) {
   
 }
@@ -594,9 +571,6 @@
   transform: scale(1.1) rotate(-10deg);
   opacity: 0.8;
 }
-
-
-
 
 .bento-content {
   z-index: 2;
@@ -651,10 +625,7 @@
   opacity: 1;
 }
 
-/* =========================================
-   SECTION 6: TESTIMONIALS (Marquee)
-   ========================================= */
-/* Instead of a grid, let's make an infinite scrolling marquee using CSS */
+/*  SECTION 6: TESTIMONIALS (Marquee) */
 .testimonial-marquee {
   display: flex;
   overflow: hidden;
@@ -671,12 +642,12 @@
 }
 
 .marquee-content:hover {
-  animation-play-state: paused; /* Pause on hover! */
+  animation-play-state: paused;
 }
 
 @keyframes scrollMarquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Requires duplicated content in HTML */
+  100% { transform: translateX(-50%); }
 }
 
 .testimonial-card {
@@ -705,9 +676,7 @@
   font-weight: 700;
 }
 
-/* =========================================
-   SECTION 7: FAQ (Animated Accordion)
-   ========================================= */
+/* SECTION 7: FAQ (Animated Accordion) */
 .accordion {
   max-width: 800px;
   margin: 0 auto;
@@ -770,45 +739,16 @@
   opacity: 1;
 }
 
-/* =========================================
-   SECTION 8: FINAL CTA (Massive Impact)
-   ========================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Striking Visual Side */
-
-
-
-
-
+/* SECTION 8: FINAL CTA (Massive Impact) */
 
 /* Responsive */
 @media (max-width: 768px) {
   .hero-title { font-size: 48px; }
   .process-steps::before { display: none; }
-  
-  
-   /* Hide the giant icon on mobile to save space */
 }
 
 
-/* =========================================
-   PROCESS STEPS DETAILS
-   ========================================= */
+/* PROCESS STEPS DETAILS */
 .step-details {
   list-style: none;
   list-style-type: none;
@@ -833,9 +773,7 @@
   font-size: 16px;
   font-weight: bold;
 }
-/* =========================================
-   PREMIUM FEATURE BANNER (Editorial Style)
-   ========================================= */
+/* PREMIUM FEATURE BANNER (Editorial Style) */
 .premium-feature-banner {
   margin-top: 60px;
   background: var(--color-secondary);
@@ -845,7 +783,7 @@
   box-shadow: 0 20px 50px rgba(0,0,0,0.15);
   position: relative;
   z-index: 2;
-  min-height: 480px; /* Increased height as requested */
+  min-height: 480px;
 }
 
 .premium-feature-content {
@@ -906,7 +844,7 @@
   min-height: 100%;
   position: relative;
 }
-/* A subtle gradient overlay so the image blends into the dark left side */
+/* Subtle gradient overlay */
 .premium-feature-image::before {
   content: '';
   position: absolute;
@@ -933,8 +871,8 @@
 .refactored-inline-38 { display: none; }
 .refactored-inline-40 { margin: 20px auto 30px; color: rgba(255,255,255,0.8); }
 .refactored-inline-41 { padding: 8px 16px; font-size: 14px; }
-/* 3D Twinkling Dots Background */
 
+/* 3D Twinkling Dots Background */
 .premium-feature-banner { position: relative; overflow: hidden; }
 .premium-feature-banner > * { position: relative; z-index: 1; }
 .premium-feature-banner::before, .premium-feature-banner::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px), radial-gradient(circle, rgba(255, 85, 0, 0.2) 2px, transparent 2px); }
@@ -1027,9 +965,7 @@
     opacity: 1;
   }
 }
-/* =========================================
-   FLOATING BOOTSTRAP ICON BALLS
-   ========================================= */
+/* FLOATING BOOTSTRAP ICON BALLS */
 .trusted-by {
   position: relative;
   overflow: hidden;
@@ -1051,7 +987,7 @@
 .shape-icon {
   position: absolute;
   font-size: 16rem;
-  opacity: 0.15; /* Increased transparency as requested previously */
+  opacity: 0.15;
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
   z-index: 0;
   line-height: 1;
@@ -1064,7 +1000,7 @@
   animation: float-ball-1 22s infinite alternate ease-in-out;
 }
 
-/* Football (Soccer) - Using globe with dark background to simulate panels */
+/* Football */
 .shape-football {
   color: #e0e0e0;
   background-color: #222;
@@ -1081,13 +1017,13 @@
   animation: float-ball-3 20s infinite alternate ease-in-out;
 }
 
-/* Baseball - Record circle with red stitching accents */
+/* Baseball */
 .shape-baseball {
   color: #ffffff;
   background: radial-gradient(circle, #ffffff 50%, #ff4444 100%);
   border-radius: 50%;
   top: 15%; right: 35%;
-  font-size: 12rem; /* slightly smaller */
+  font-size: 12rem;
   animation: float-ball-4 24s infinite alternate ease-in-out;
 }
 
@@ -1117,7 +1053,7 @@
   margin-bottom: 10px;
 }
 .quote-header .quote-icon {
-  margin-bottom: 0 !important; /* Override original margin */
+  margin-bottom: 0 !important; 
   line-height: 1;
 }
 .team-name {
@@ -1125,15 +1061,10 @@
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #FF5500; /* Orange in light mode (since I did global replace earlier, I'll use #FF5500 directly, which is neon orange) */
-  /* Wait, the user said "orange(light mode), neon orange(dark mode)".
-     So in light mode, it should be #FF3300 (primary orange). 
-     In dark mode, it should be #FF5500 (neon orange). */
+  color: #FF5500;
   color: #FF3300;
 }
 
-
-/* User requested explicit styling for Home1 CTA outline button in light mode */
 html:not([data-theme="dark"]) 
 
 .bento-item .bento-icon {

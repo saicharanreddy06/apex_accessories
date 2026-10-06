@@ -1,8 +1,6 @@
 @import url("global.css");
 
-/* =========================================
-   CONTACT HERO
-   ========================================= */
+/* CONTACT HERO */
 .contact-hero {
   position: relative;
   height: 100vh;
@@ -191,9 +189,7 @@
 
 
 
-/* =========================================
-   CONTACT CSS
-   ========================================= */
+/*  CONTACT CSS */
 
 
 
@@ -240,21 +236,7 @@
 }
 
 /* Contact Info */
-
-
-
-
-
-
-
-
-
-
 /* Form Styles */
-
-
-
-
 .form-group {
   margin-bottom: var(--spacing-md);
 }
@@ -299,17 +281,7 @@
 }
 
 /* Global Offices */
-
-
-
-
-
-
-
-
 /* Support Hours */
-
-
 .hours-box p {
   margin-bottom: var(--spacing-sm);
 }
@@ -332,13 +304,11 @@
   text-align: center;
 }
 
-
-
 .manager-card p {
   color: var(--color-text-light);
 }
 
-/* FAQ Accordion (Copied logic from index) */
+/* FAQ Accordion */
 .accordion {
   max-width: 800px;
   margin: 0 auto;
@@ -390,15 +360,7 @@
 }
 
 /* Social Grid */
-
-
-
-
-
-
 /* Wholesale CTA */
-
-
 /* Active Nav */
 .nav-links a.active {
   color: #FF5500;
@@ -422,22 +384,12 @@
     margin-bottom: 5px;
   }
 }
-/* ANIMATIONS ADDED TO REAL WEBSITE (CONTACT PAGE) */
-
-
-
-
-
-
+/* ANIMATIONS CONTACT PAGE */
 .office-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   border-bottom: 4px solid var(--color-primary);
 }
-
-
-
-
 
 .contact-form input,
 .contact-form select,
@@ -452,13 +404,10 @@
 }
 
 
-/* MIGRATED INLINE STYLES FOR CONTACT */
 .refactored-inline-7 { color:white; }
 .refactored-inline-8 { margin: 20px auto 40px; color:white; }
 
 /* Hero Section for Contact Page */
-
-
 
 .hero-title {
   font-size: 3.5rem;
@@ -477,7 +426,7 @@
   animation: fadeInUp 1.4s ease forwards;
 }
 
-/* Geometry Elements (shared) */
+/* Geometry Elements  */
 .floating-bg-elements {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -506,9 +455,7 @@
   animation: float-tumble 20s infinite linear;
 }
 
-/* =========================================
-   MAP CTA SECTION
-   ========================================= */
+/*  MAP CTA SECTION */
 .map-cta-section {
   padding: 80px 0;
   background-color: var(--color-bg);
@@ -584,9 +531,7 @@
   }
 }
 
-/* =========================================
-   WHOLESALE CTA BANNER
-   ========================================= */
+/* WHOLESALE CTA BANNER */
 .wholesale-cta-section {
   padding: 80px 0;
   background-color: var(--color-bg);
@@ -766,9 +711,7 @@
   margin: 0;
 }
 
-/* =========================================
-   FORM BUTTON ROW
-   ========================================= */
+/* FORM BUTTON ROW */
 .form-submit-row {
   display: flex;
   gap: 20px;
@@ -776,16 +719,13 @@
   margin-top: 30px;
 }
 
-.form-submit-row 
 
 @media (max-width: 480px) {
   .form-submit-row {
     flex-direction: column;
     align-items: center;
   }
-  .form-submit-row 
 }
-
 
 /* 3D Twinkling Dots Background (Inherited from Homepage) */
 .wholesale-banner::before, 
@@ -824,63 +764,7 @@
   100% { opacity: 1; }
 }
 
-
-.floating-bg-elements {
-
-  position: absolute;
-
-  top: 0; left: 0; right: 0; bottom: 0;
-
-  overflow: hidden;
-
-  pointer-events: none;
-
-  z-index: 0;
-
-}
-
-.geom-sphere {
-
-  position: absolute;
-
-  border-radius: 50%;
-
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,255,255,0.2) 50%, rgba(0,0,0,0.03) 100%);
-
-  box-shadow: inset -10px -10px 20px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.05);
-
-  backdrop-filter: blur(8px);
-
-  -webkit-backdrop-filter: blur(8px);
-
-  border: 1px solid rgba(255,255,255,0.7);
-
-  animation: float-geom 12s infinite ease-in-out alternate;
-
-}
-
-.geom-cube {
-
-  position: absolute;
-
-  background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.1) 100%);
-
-  box-shadow: inset 2px 2px 5px rgba(255,255,255,0.8), inset -5px -5px 15px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.08);
-
-  backdrop-filter: blur(8px);
-
-  -webkit-backdrop-filter: blur(8px);
-
-  border: 1px solid rgba(255,255,255,0.7);
-
-  border-radius: 15px;
-
-  animation: float-tumble 20s infinite linear;
-
-}
-
-
-
+.
 /* --- MIGRATED QUOTE SECTION --- */
 .quote-section {
   padding: 120px 0;

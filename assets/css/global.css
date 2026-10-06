@@ -39,7 +39,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow-x: clip; removed to fix animation-timeline */
 }
 
 body {
@@ -48,8 +47,6 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   line-height: 1.6;
-  /* overflow-x: clip; removed to fix animation-timeline */
-  /* Idle Animation: Subtle animated noise/gradient background */
   background-image: 
     radial-gradient(circle at 15% 50%, rgba(255, 51, 0, 0.03), transparent 25%),
     radial-gradient(circle at 85% 30%, rgba(0, 136, 255, 0.03), transparent 25%);
@@ -257,8 +254,6 @@ img {
   padding: 5px 0;
   color: var(--color-secondary);
 }
-
-/* Hover dot effect */
 
 /* Elegant animated underline */
 .nav-links a:not(.btn)::after {
@@ -724,7 +719,7 @@ img {
 .dropdown-menu a:hover {
   background: var(--color-primary);
   color: white;
-  padding-left: 28px; /* slight indent on hover for premium feel */
+  padding-left: 28px;
 }
 
 
@@ -881,9 +876,7 @@ img {
 }
 
 
-/* =========================================
-   DUAL THEME FOOTER
-   ========================================= */
+/*  DUAL THEME FOOTER */
 
 /* --- LIGHT MODE (METALLIC) --- */
 .site-footer {
@@ -1008,7 +1001,7 @@ img {
   height: 60px !important;
 }
 
-/* --- PURE CSS DROPDOWN MOBILE HACK --- */
+/* --- DROPDOWN --- */
 .dd-toggle-checkbox:checked ~ .dropdown-menu {
   opacity: 1 !important;
   visibility: visible !important;
@@ -1018,16 +1011,11 @@ img {
 .dd-toggle-label { display: inline-flex; align-items: center; justify-content: center; }
 
 
-
-/* ========================================= */
-/* EXPORTED DARK MODE & RTL THEME OVERRIDES */
-/* ========================================= */
-
         /* Navbar Toggle UI Styles */
         #theme-controls {
             display: flex;
             gap: 10px;
-            margin-right: 15px; /* Space between toggles and the CTA button */
+            margin-right: 15px;
             align-items: center;
         }
         .theme-nav-btn {
@@ -1073,17 +1061,9 @@ img {
         }
         
         /* --- DARK MODE ELEMENT OVERRIDES --- */
-
-        /* --- KEEP CTA BOX DARK AS IT IS IN LIGHT MODE --- */
         [data-theme="dark"] .final-cta .cta-wrapper {
             background: #0A0A10 !important;
         }
-
-
-        
-        
-        
-
 
         /* --- DARK MODE PROCESS CARD CLEAN --- */
         [data-theme="dark"] .process-card-clean {
@@ -1170,7 +1150,7 @@ img {
 
         /* --- DARK MODE TIMELINE GLASS --- */
         [data-theme="dark"] .timeline-item {
-            background: rgba(255, 255, 255, 0.05) !important; /* Slighter white glass */
+            background: rgba(255, 255, 255, 0.05) !important;
             border: 1px solid rgba(255, 255, 255, 0.1) !important;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
         }
@@ -1214,7 +1194,7 @@ img {
         [data-theme="dark"] .hero-section .hero-title,
         [data-theme="dark"] .hero-section .hero-subtitle,
         [data-theme="dark"] .hero-section .hero-eyebrow {
-            color: #0A0A10 !important; /* Do not change text color from original */
+            color: #0A0A10 !important;
             -webkit-text-fill-color: #0A0A10 !important;
         }
         [data-theme="dark"] .hero-section .hero-title span,
@@ -1223,7 +1203,6 @@ img {
             -webkit-text-fill-color: #FF3300 !important;
         }
         [data-theme="dark"] .hero-overlay {
-            /* Darken the background image instead */
             background: radial-gradient(circle at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%) !important;
         }
 
@@ -1240,10 +1219,10 @@ img {
 
         /* --- HERO SECTION DARK MODE --- */
         [data-theme="dark"] .grid-hero-section {
-            background-color: #333 !important; /* Grid line color in dark mode */
+            background-color: #333 !important; 
         }
         [data-theme="dark"] .grid-cell {
-            background-color: #0a0a0a !important; /* Base cell color in dark mode */
+            background-color: #0a0a0a !important;
         }
 
         [data-theme="dark"] .grid-cell:hover,
@@ -1252,15 +1231,15 @@ img {
             transition: background-color 0s !important;
         }
         [data-theme="dark"] .glass-overlay {
-            background: rgba(0,0,0,0.7) !important; /* Dark frosted glass */
+            background: rgba(0,0,0,0.7) !important; 
             backdrop-filter: blur(34px) saturate(120%) !important;
             -webkit-backdrop-filter: blur(34px) saturate(120%) !important;
         }
         [data-theme="dark"] .hero-mega-text,
         [data-theme="dark"] .hero-sub-text {
-            color: #ffffff !important; /* Must be white to be visible on black grid */
+            color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.5); /* Pop against the orange hover */
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
         [data-theme="dark"] .hero-mega-text span.accent-text {
             color: #FF5500 !important;
@@ -1268,8 +1247,6 @@ img {
             text-shadow: 0 0 12px rgba(255, 85, 0, 0.7);
         }
 
-
-        /* Fix text legibility inside the Custom Advantage box in dark mode */
         [data-theme="dark"] .premium-feature-content,
         [data-theme="dark"] .premium-feature-content h3,
         [data-theme="dark"] .premium-feature-content p,
@@ -1311,11 +1288,6 @@ img {
             -webkit-text-fill-color: #ffffff !important;
             background: none !important;
         }
-        
-        
-
-        
-
 
         [data-theme="dark"] .sport-text-cloud {
             background-color: transparent !important;
@@ -1429,7 +1401,7 @@ img {
             margin-right: auto;
         }
         [dir="rtl"] .split-layout {
-            flex-direction: row-reverse; /* Usually flex flips naturally, but if it doesn't, this forces it */
+            flex-direction: row-reverse;
         }
 
         
@@ -1460,7 +1432,7 @@ img {
         /* --- RTL SPECIFIC ADJUSTMENTS --- */
         [dir="rtl"] #theme-controls {
             margin-right: 0;
-            margin-left: 15px; /* Flip margin for RTL */
+            margin-left: 15px; 
         }
         [dir="rtl"] .bi-chevron-down {
             margin-right: 5px; margin-left: 0;
@@ -1474,9 +1446,7 @@ img {
   .menu-toggle-label { color: #ffffff !important; }
 
 
-/* =========================================
-   MOBILE HEADER OVERRIDES (1024px)
-   ========================================= */
+
 @media (max-width: 1024px) {
   .nav-container {
     display: flex !important;
@@ -1494,7 +1464,7 @@ img {
     align-items: center;
   }
   
-  /* Shrink logo slightly to guarantee fit */
+  
   .site-header .logo img { height: 45px !important; }
   .logo-text { font-size: 1.2rem !important; }
   
@@ -1568,16 +1538,12 @@ img {
   .nav-item.dropdown { display: flex; flex-direction: column; align-items: center; }
   .dropdown-menu a { color: #ffffff !important; font-size: 18px !important; }
 }
-
-/* Fix Dark Mode Hamburger Visibility */
 [data-theme="dark"] 
   .menu-toggle-label {
     color: #ffffff !important;
 }
 
-/* =========================================
-   DESKTOP HEADER OVERRIDES (min-width: 1025px)
-   ========================================= */
+/* DESKTOP HEADER  */
 @media (min-width: 1025px) {
   .nav-container {
     display: grid !important;
@@ -1626,7 +1592,7 @@ img {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 16px !important; /* Restore text size */
+    font-size: 16px !important; 
     padding: 10px 24px !important;
     white-space: nowrap !important;
     height: auto !important;
@@ -1634,7 +1600,7 @@ img {
     border-radius: 50px !important;
   }
   .header-cta .btn::after {
-    content: none !important; /* Remove mobile 'Order' text */
+    content: none !important;
   }
   #theme-controls {
     display: flex !important;

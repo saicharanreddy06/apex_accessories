@@ -1,12 +1,5 @@
 
 /* --- ORDER HERO SECTION --- */
-
-
-
-
-
-
-
 /* --- PROCESS GRID OVERRIDES --- */
 .order-process-grid {
   display: grid;
@@ -159,7 +152,7 @@
   .glass-form-wrapper { padding: 30px 20px; }
 }
 
-/* --- DARK MODE OVERRIDES (In case theme.js misses some) --- */
+/* --- DARK MODE OVERRIDES --- */
 [data-theme="dark"] .testi-card,
 [data-theme="dark"] .glass-form-wrapper {
   background: #111;
@@ -187,12 +180,6 @@
     max-width: 600px;
     margin: 0 auto;
 }
-
-
-/* --- HERO GLOW EFFECTS --- */
-
-
-
 
 /* --- PROCESS CARDS INTERACTIVITY OVERRIDES --- */
 .process-section .process-card-clean {
@@ -345,7 +332,7 @@ body > section
   border-radius: 50px;
 }
 
-/* NO ORANGE TEXT - Strict Bulk Pricing Format */
+/* NO ORANGE TEXT  */
 .tier-head {
   font-size: 0.85rem;
   font-weight: 700;
@@ -684,7 +671,6 @@ body > section
 .marquee-track {
   display: flex;
   width: max-content;
-  /* Adjust animation as needed; using existing keyframes if defined */
 }
 
 /* --- BADGE ALIGNMENT FIX --- */

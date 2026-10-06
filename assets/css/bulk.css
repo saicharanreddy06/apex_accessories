@@ -1,13 +1,8 @@
 @import url("global.css");
 
-/* =====================================================
-   BULK PRICING PAGE — Premium Light Mode
-   All styles external, no inline CSS
-   ===================================================== */
+/*  BULK PRICING PAGE — Premium Light Mode */
 
-/* -------------------------------------------------------
-   HERO SECTION (Full-Screen — kept dark for impact)
-------------------------------------------------------- */
+/* HERO SECTION */
 
 
 
@@ -60,20 +55,9 @@
   from { transform: translateY(0) rotate(0deg); }
   to   { transform: translateY(-30px) rotate(25deg); }
 }
-
-
-
-
-
-
-
 .bulk-hero-title span {
   color: #FF5500;
 }
-
-
-
-
 
 .bulk-hero-actions 
 
@@ -124,18 +108,11 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* -------------------------------------------------------
-   SECTION UTILITY
-------------------------------------------------------- */
+/* SECTION UTILITY*/
 .section-header.center { text-align: center; }
 .section-header.center 
 
-
-
-
-/* -------------------------------------------------------
-   VOLUME TIERS — Light
-------------------------------------------------------- */
+/* VOLUME TIERS — Light */
 .tier-section {
   padding: 100px 0;
   background: var(--color-bg);
@@ -298,9 +275,7 @@
 .tier-features li i { color: var(--color-border); font-size: 15px; flex-shrink: 0; transition: color 0.3s; }
 .tier-card.featured .tier-features li i { color: #FF5500; }
 
-/* -------------------------------------------------------
-   BULK SPLIT SECTIONS — Light bg
-------------------------------------------------------- */
+/* BULK SPLIT SECTIONS — Light bg */
 .bulk-details-section {
   padding: 100px 0;
   background: #f7f8fc;
@@ -408,9 +383,7 @@
   pointer-events: none;
 }
 
-/* -------------------------------------------------------
-   CLOTH MATERIAL GUIDE — Light
-------------------------------------------------------- */
+/* CLOTH MATERIAL GUIDE — Light */
 .material-section {
   padding: 100px 0;
   background: var(--color-bg);
@@ -507,9 +480,7 @@
 .material-features li:last-child { border-bottom: none; }
 .material-features li i { color: #FF5500; font-size: 14px; flex-shrink: 0; }
 
-/* -------------------------------------------------------
-   DESIGN IDEAS — Light (subtle bg-alt)
-------------------------------------------------------- */
+/* DESIGN IDEAS — Light (subtle bg-alt) */
 .design-ideas-section {
   padding: 100px 0;
   background: #f7f8fc;
@@ -522,20 +493,7 @@
   margin-top: 56px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------------------------------------------
-   DESIGN TOOLS CTA BANNER — Keep dark for contrast
-------------------------------------------------------- */
+/* DESIGN TOOLS CTA BANNER — Keep dark for contrast */
 
 .design-tools-section::before {
   content: '';
@@ -547,27 +505,12 @@
   pointer-events: none;
 }
 
-
-
-
-
-
 .design-tools-text h2 span { color: #FF5500; }
-
-
-
 .design-tools-actions 
 .design-tools-actions .btn-outline:hover { background: #ffffff; color: var(--color-secondary); border-color: #ffffff; }
 
-/* -------------------------------------------------------
-   QUOTE FORM SECTION — Light glassmorphism on light bg
-------------------------------------------------------- */
-/* =========================================
-   BOLD TYPOGRAPHIC QUOTE SECTION
-   ========================================= */
-
-
-
+/* QUOTE FORM SECTION — Light glassmorphism on light bg */
+/* BOLD TYPOGRAPHIC QUOTE SECTION */
 /* --- 3D FLIP CARDS (LAYOUT FIXED) --- */
 .design-idea-card {
   perspective: 1200px;
@@ -658,16 +601,11 @@
   box-shadow: 0 15px 40px rgba(255, 85, 0, 0.25);
   border-color: rgba(255, 85, 0, 0.5);
 }
-/* -------------------------------------------------------
-   RESPONSIVE
-------------------------------------------------------- */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .tier-grid { grid-template-columns: repeat(2, 1fr); }
   .material-grid { grid-template-columns: repeat(2, 1fr); }
   .design-ideas-grid { grid-template-columns: repeat(2, 1fr); }
-  
-  
-  
 }
 
 @media (max-width: 768px) {
@@ -806,15 +744,6 @@
 
 /* --- NEW ENQUIRY CTA SECTION --- */
 
-
-
-
-
-
-
-
-
-
 [data-theme="dark"] 
 [data-theme="dark"] .vision-merged-cta {
   background: rgba(255,255,255,0.03);
@@ -826,6 +755,6 @@
 }
 
 
-/* Ensure outline button is visible on dark hero */
+/* outline button visible on dark hero */
 .bulk-hero .btn-outline { color: #ffffff; border-color: #ffffff; }
 .bulk-hero .btn-outline:hover { background: #ffffff; color: var(--color-secondary); }
