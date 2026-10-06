@@ -1001,7 +1001,6 @@ body {
 .champions-magazine {
   padding: 70px 0;
   background: #ffffff; /* Pure white background for high-end editorial feel */
-  overflow: hidden;
 }
 
 .mag-container {
